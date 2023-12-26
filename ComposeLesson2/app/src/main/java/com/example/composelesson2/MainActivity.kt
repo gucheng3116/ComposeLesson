@@ -48,18 +48,18 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun AddNumber() {
-    var num1 by remember {
+    var num = remember {
         mutableStateOf(0)
     }
     Row {
         Text(
-            num1.toString(),
+            num.value.toString(),
             modifier = Modifier.padding(10.dp)
         )
 
         ElevatedButton(
             onClick = {
-                num1 += 1
+                num.value += 1
             },
             modifier = Modifier.padding(start = 10.dp)
         ) {
