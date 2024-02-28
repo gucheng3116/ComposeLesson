@@ -13,5 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ComposeLesson2"
+rootProject.name = "ComposeLesson3LazyList"
 include(":app")
+ 
